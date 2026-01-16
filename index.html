@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Takab | My Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --secondary: #06b6d4;
+      --bg: #f8fafc;
+      --text: #0f172a;
+      --card: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #e0f2fe, #fdf4ff);
+      color: var(--text);
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.95;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(255,255,255,0.9);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      z-index: 10;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--secondary);
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 20px;
+      padding: 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .card h2 {
+      color: var(--primary);
+      margin-bottom: 15px;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .skill {
+      background: #f1f5f9;
+      padding: 15px 20px;
+      border-radius: 14px;
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #020617;
+      color: #e5e7eb;
+    }
+
+    footer span {
+      color: #38bdf8;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header id="home">
+    <h1>Takab</h1>
+    <p>Welcome to my personal profile website ✨</p>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- CONTENT -->
+  <section>
+
+    <div class="card" id="about">
+      <h2>About Me</h2>
+      <p>
+        สวัสดี 👋 ผมชื่อ <strong>Takab</strong> นี่คือเว็บไซต์โปรไฟล์ส่วนตัว
+        คุณสามารถแก้ไขเนื้อหา เพิ่มรูปภาพ หรือเชื่อมลิงก์ไปยังส่วนต่าง ๆ ได้ตามต้องการ
+      </p>
+    </div>
+
+    <div class="card" id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill">Web Design</div>
+        <div class="skill">HTML / CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Graphic Design</div>
+      </div>
+    </div>
+
+    <div class="card" id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>🌐 Personal Website</li>
+        <li>📱 Web Application</li>
+        <li>🎨 Creative Design Project</li>
+      </ul>
+    </div>
+
+    <div class="card" id="contact">
+      <h2>Contact</h2>
+      <p>
+        📧 Email: your@email.com<br />
+        🌍 Website: https://yourwebsite.com<br />
+        🔗 Social: Facebook | Instagram | GitHub
+      </p>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 <span>Takab</span> • My Profile Website
+  </footer>
+
+</body>
+</html>
